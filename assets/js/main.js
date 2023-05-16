@@ -125,3 +125,15 @@ sr.reveal(`.home__image`, {origin:'bottom'})
 sr.reveal(`.about__data, .skills__data`, {origin:'left'})
 sr.reveal(`.about__image, .skills__content`, {origin:'right'})
 sr.reveal(`.services__card, .projects__card`, {interval:100})
+
+/*CHANGE LANGUAJE*/
+
+var languageSelect = document.getElementById('nav-select')
+languageSelect.addEventListener('change',()=>{
+    var language = languageSelect.options[languageSelect.selectedIndex].value;
+    if (language === 'ES')
+        location.href="es/index.html";
+    else
+    location.href="../index.html";
+})
+
