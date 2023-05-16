@@ -132,8 +132,14 @@ var languageSelect = document.getElementById('nav-select')
 languageSelect.addEventListener('change',()=>{
     var language = languageSelect.options[languageSelect.selectedIndex].value;
     if (language === 'ES')
+    {
         location.href="es/index.html";
+        languageSelect.selectedIndex = 1
+    }
     else
-    location.href="../index.html";
+    {
+        location.href="../index.html";
+        languageSelect.selectedIndex = 0
+    }
 })
 

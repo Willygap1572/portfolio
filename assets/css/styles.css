@@ -817,6 +817,9 @@ svg {
         backdrop-filter: blur(25px);
         -webkit-backdrop-filter: blur(25px);
     }
+    .nav__select {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1152px) {
@@ -972,5 +975,7 @@ svg {
         right: 3rem;
     }
 
-
+    .nav__select {
+        width: 100%;
+    }
 }
