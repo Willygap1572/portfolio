@@ -680,7 +680,9 @@ svg {
         padding-block: 1.5rem;
     }
 
-    
+    .nav__select {
+        width: 2.5rem;
+    }
 
 }
     /*MEDIUM DEVICES*/
@@ -693,6 +695,10 @@ svg {
     .contact__containner{
         grid-template-columns: 360px;
         justify-content: center;
+    }
+
+    .nav__select {
+        width: 2.5rem;
     }
 }
 
@@ -733,6 +739,10 @@ svg {
     .services__container,
     .projects__container{
         grid-template-columns: repeat(2, 352px);
+    }
+
+    .nav__select {
+        width: 2.5rem;
     }
 }
 
