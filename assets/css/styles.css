@@ -685,6 +685,22 @@ svg {
     }
 
 }
+@media screen and (max-width:1020px) {
+    .home__container,
+    .about__container,
+    .skills__container,
+    .services__container,
+    .projects__container,
+    .contact__containner{
+        grid-template-columns: 360px;
+        justify-content: center;
+    }
+
+    .nav__select {
+        width: 2.5rem;
+    }
+}
+
     /*MEDIUM DEVICES*/
 @media screen and (min-width:572px) {
     .home__container,
