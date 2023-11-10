@@ -1,0 +1,143 @@
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+a {
+    color: var(--title-color);
+}
+
+.nav__logo {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    text-decoration: none;
+}
+
+.nav__logo span {
+    color: var(--first-color);
+}
+
+.nav__menu {
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__list {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    font-weight: var(--font-semi-bold);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.nav__list a {
+    transition: all ease .4s;
+}
+
+.nav__list a:hover {
+    color: var(--first-color);
+}
+
+/*SMALL*/
+.nav__more__icon__small {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: 20px;
+    width: 20px;
+    gap: 4px
+}
+
+.nav__more__icon__small span{
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--title-color);
+    transition: all ease .4s;
+}
+
+.nav__more__icon__small:hover span {
+    background-color: var(--first-color);
+}
+
+.nav__menu__small {
+    background-color: var(--container-color);
+    width: 20rem;
+    height: 100%;
+    position: fixed;
+    right: -20rem;
+    transition: all ease .4s;
+    z-index: 100;
+}
+
+.nav__more__icon__small.active {
+    display: none;
+}
+
+
+.nav__menu__small.active {
+    right: 0;
+    top: 0;
+}
+
+.nav__list__small {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+
+.nav__link {
+    transition: all ease .4s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.close {
+    display: none;
+}
+
+.close.active {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.close span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--title-color);
+    transition: all ease .4s;
+}
+
+.close.active span:nth-child(1) {
+    transform: rotate(45deg) translate(1px, 0px);
+}
+
+.close.active span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.close.active:hover span {
+    background-color: var(--first-color);
+}
