@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap");
 
 .App {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 
@@ -133,7 +133,8 @@ svg {
 }
 
 .section {
-  padding-block: 5rem 2rem;
+  width: 100%;
+  padding: 5rem 0rem 4rem 0rem;
 }
 
 .section__title,
@@ -163,4 +164,11 @@ svg {
 .icon {
   width: 30px;
   height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+  padding: 1rem 0rem 1rem 0rem;
+
+  }
 }

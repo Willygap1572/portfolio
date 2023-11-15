@@ -15,7 +15,7 @@
 }
 
 .home__data {
-  text-align: center;
+  padding: 0 6rem;
 }
 
 .home__subtitle,
@@ -34,21 +34,23 @@
 }
 
 .home__description {
+  text-align: left;
+  font-size: var(--h3-font-size);
   margin-block: 1rem 1.5rem;
 }
 
 .home__social {
   display: flex;
   justify-content: center;
-  column-gap: 1.25rem;
+  column-gap: 2rem;
+  margin-top: 3rem;
 }
 
 .home__main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 30rem);
   place-items: center;
-  padding: 0 8rem;
-  gap: 4rem;
+  gap: 15rem;
 }
 
 .home__model__border,
@@ -70,8 +72,9 @@
 }
 
 .home__model__border {
-  width: calc(25rem + 5px);
-  height: calc(29rem + 5px);
+  transform: translateY(-5rem);
+  width: calc(25rem + 10px);
+  height: calc(29rem + 10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,4 +104,82 @@
   width: 320px;
   fill: var(--first-color);
   filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, 0.2));
+}
+
+@media screen and (max-width: 1200px) {
+  .home__main {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .home__description,
+  .home__main__description,
+  .home__subtitle,
+  .home__education,
+  .home__title {
+    text-align: center;
+  }
+
+  .home__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .home__subtitle,
+  .home__education {
+    font-size: var(--h2-font-size);
+  }
+
+  .home__description {
+    font-size: var(--normal-font-size);
+  }
+
+  .home__model {
+    width: 20rem;
+    height: 24rem;
+  }
+
+  .home__model__border {
+    margin-top: 2rem;
+    width: calc(18rem + 7px);
+    height: calc(22rem + 7px);
+  }
+
+  .home__model {
+    width: 18rem;
+    height: 22rem;
+  }
+
+  .home__data {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__main {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+
+  .home__model {
+    width: 16rem;
+    height: 20rem;
+  }
+
+  .home__description {
+    text-align: center;
+  }
+
+  .home__main__description {
+    text-align: center;
+  }
+
+  .home__model__border {
+    margin-top: 2rem;
+    width: calc(16rem + 5px);
+    height: calc(20rem + 5px);
+  }
+
+  .home__data {
+    padding: 0 2rem;
+  }
 }

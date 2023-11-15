@@ -28,6 +28,6 @@
       </pattern>
 
       <!-- Insert your profile (recommended size: 640 x 940) -->
-      <image id="imageBorder" width="640" height="940" href=""/>
+      <image id="imageBorder" width="640" height="940" href="img/gde-andr.png"/>
    </defs>
 </svg>

@@ -6,8 +6,12 @@
 }
 
 .skills__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-bottom: 2rem;
-    row-gap: 3.5rem;
+    gap: 10rem;
 }
 
 .skills__data {
@@ -15,6 +19,8 @@
 }
 
 .skills__description {
+    text-align: left;
+    font-size: var(--h3-font-size);
     margin-bottom: 2rem;
 }
 
@@ -24,10 +30,12 @@
 }
 
 .skills__content {
+    font-size: var(--h3-font-size);
     grid-template-columns: repeat(2, max-content);
     column-gap: 4rem;
     justify-content: center;
     align-items: baseline;
+    text-align: left;
 }
 
 .skills__group {
@@ -42,4 +50,17 @@
 
 .skills__item::marker {
     color: var(--first-color);
+}
+
+.skills__content__data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.skills__content__data > * {
+    width: 25rem;
+    margin: 1rem 0 3rem 0;
 }

@@ -30,7 +30,7 @@ const Projects = () => {
           codeLink="https://github.com/Willygap1572/kahootClone-DjangoServer"
         />
         <ProjectCard
-          imgSrc="/src/assets/img/project3.png"
+          imgSrc="/src/assets/img/project4.png"
           altText="projects image"
           subtitle="VUE.js Web page"
           title="Kahoot Clone Client"

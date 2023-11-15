@@ -8,6 +8,7 @@
 
 .services__container {
     padding: 0 3rem;
+    margin: 2rem 0 3rem 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
@@ -35,7 +36,7 @@
     background-color: var(--container-color);
     padding: 3rem 1.25rem;
     border: 2px solid var(--container-color);
-    transition: border .4s;
+    transition: all ease .4s;
 }
 
 .services__icon {
@@ -64,5 +65,6 @@
 }
 
 .services__card:hover {
+    transform: translateY(-.5rem) scale(1.02);
     border: 2px solid var(--first-color);
 }
