@@ -51,7 +51,7 @@ a {
 
 /*SMALL*/
 .nav__more__icon__small {
-    margin-right: 2rem;
+    margin-right: 3rem;
     display: flex;
     flex-direction: column;
     z-index: 1;

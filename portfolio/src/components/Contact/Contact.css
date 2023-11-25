@@ -66,3 +66,9 @@
         transform: rotate(360deg);
     }
 } 
+
+@media screen and (max-width: 768px) {
+    .contact__container {
+        padding: 0 2rem;
+    }
+}

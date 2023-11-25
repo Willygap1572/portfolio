@@ -46,9 +46,9 @@ const Projects = () => {
         <ProjectCard
             imgSrc="/src/assets/img/project6.png"
             altText="projects image"
-            subtitle="This page!"
-            title="Portfolio"
-            codeLink="https://github.com/Willygap1572/portfolio"
+            subtitle="Tensorflow and OpenCV"
+            title="Face/Hands/Body Recognition"
+            codeLink="https://github.com/Willygap1572/VideoRecognition"
         />
 
         

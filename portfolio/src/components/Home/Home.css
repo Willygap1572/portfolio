@@ -149,15 +149,14 @@
     height: 22rem;
   }
 
-  .home__data {
-    padding: 0 2rem;
+  .home__container {
+    padding-top: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .home__main {
     grid-template-columns: 1fr;
-    row-gap: 5rem;
   }
 
   .home__model {
@@ -179,7 +178,11 @@
     height: calc(20rem + 5px);
   }
 
-  .home__data {
-    padding: 0 2rem;
+  .home__container {
+    padding-top: 0;
+  }
+
+  .section.home {
+    padding-bottom: 0;
   }
 }
