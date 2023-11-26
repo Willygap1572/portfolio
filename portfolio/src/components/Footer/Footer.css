@@ -54,3 +54,16 @@
     font-size: var(--smaller-font-size);
     margin-top: 2rem;
 }
+
+@media screen and (max-width: 410px) {
+    .footer__social {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer__social > * {
+        width: 2.5rem;
+    }
+    
+}
