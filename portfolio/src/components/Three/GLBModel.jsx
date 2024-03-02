@@ -6,7 +6,8 @@ import * as THREE from "three";
 const Model = ({ url }) => {
   const gltf = useLoader(GLTFLoader, url);
   const { camera, scene } = useThree();
-  const mixer = useRef(); // Ref para acceder al mixer de animación
+  const mixer = useRef();
+  console.log(gltf.scene);
 
   useEffect(() => {
     // Configuración inicial de la cámara y la luz
@@ -37,13 +38,12 @@ const Model = ({ url }) => {
     };
   }, [camera, scene, gltf]);
 
-  const radius = 5; // radio de la trayectoria circular de la cámara
-  const lookAtPosition = new THREE.Vector3(0, 1.6, 0); // punto al que la cámara debe mirar
+  const radius = 7;
+  const lookAtPosition = new THREE.Vector3(0, 1.6, 0);
 
   useFrame((state, delta) => {
     mixer.current?.update(delta);
 
-    // Calcular la nueva posición de la cámara basado en el tiempo
     const time = state.clock.getElapsedTime();
     const velocity = 0.2
     const angleXZRange = Math.PI / 8;
@@ -52,7 +52,7 @@ const Model = ({ url }) => {
     const angleY = Math.sin(time * velocity) * angleYRange;
     camera.position.x = Math.sin(angleXZ) * radius / 10;
     camera.position.z = Math.cos(angleXZ) * radius / 10;
-    camera.position.y = 1.60 + Math.sin(angleY) * radius / 13; // opcional: añadir un poco de movimiento vertical
+    camera.position.y = 1.7 + Math.sin(angleY) * radius / 13;
 
     camera.lookAt(lookAtPosition);
   });
