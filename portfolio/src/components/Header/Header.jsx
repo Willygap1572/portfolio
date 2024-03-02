@@ -22,7 +22,7 @@ function Header() {
     <header className="header" id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          Guillermo <span>de Andres</span>
+          Guillermo <span>de Andrés</span>
         </a>
         <div
           className={

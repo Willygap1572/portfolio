@@ -7,6 +7,7 @@ function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [confirmationMessage, setConfirmationMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,12 +30,15 @@ function Contact() {
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         console.log("Email sent successfully!", response);
+
         setName("");
         setEmail("");
         setMessage("");
+        setConfirmationMessage("Your message has been sent successfully!✅");
       })
       .catch((error) => {
         console.error("Error sending email:", error);
+        setConfirmationMessage("There was an error sending your message. Please try again.❌");
       });
   };
 
@@ -43,7 +47,7 @@ function Contact() {
       <h3 className="section__subtitle">
         Get In <span>Touch</span>
       </h3>
-      <h2 className="section__title">Contact Me</h2>
+      <h2 className="section__title">Contact Me!</h2>
 
       <div className="contact__container container grid">
         <form
@@ -84,7 +88,7 @@ function Contact() {
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
 
-          <p className="contact__message" id="contact-message"></p>
+          <p className="contact__message" id="contact-message">{confirmationMessage}</p>
 
           <button
             className="button contact__button"
